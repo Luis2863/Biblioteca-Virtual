@@ -10,7 +10,7 @@ app.config['MYSQL_PASSWORD']='280603'
 app.config['MYSQL_DB']='biblioteca'
 app.config['MYSQL_CURSORCLASS']='DictCursor'
 mysql=MySQL(app)
-#
+
 @app.route('/')
 def home():
     return render_template('index.html')
